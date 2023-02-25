@@ -7,14 +7,14 @@
         class="plan"
         v-for="(plan, index) in plans"
         :key="index"
-        v-on:click="setPlan((plan as any).name)"
-        v-bind:class="formData.form2.plan == (plan as any).name && 'isFocused'"
+        v-on:click="setPlan(plan.name)"
+        v-bind:class="formData.form2.plan == plan.name && 'isFocused'"
       >
-        <img v-bind:src="`${(plan as any).src}`" />
+        <img v-bind:src="plan.src" v-bind:alt="plan.name" />
         <div>
-          <h3>{{ (plan as any).name }}</h3>
+          <h3>{{ plan.name }}</h3>
           <span
-            >${{ (plan as any).price }}/{{
+            >${{ plan.price }}/{{
               formData.form2.option == "Yearly" ? "yr" : "mo"
             }}</span
           >
@@ -37,14 +37,24 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from "vue";
+import { defineProps, PropType } from "vue";
 
 const changePayMode = () => {
   props.isYearly();
 };
+
 const props = defineProps({
   formData: { type: Object, required: true },
-  plans: { type: Array, required: true },
+  plans: {
+    type: Array as PropType<
+      {
+        name: string;
+        src: string;
+        price: number;
+      }[]
+    >,
+    required: true,
+  },
   isYearly: { type: Function, required: true },
 });
 

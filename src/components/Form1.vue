@@ -45,7 +45,6 @@ const props = defineProps({
 });
 
 const validateName = ref((rule: any, value: any, callback: any) => {
-  console.log("asdas");
   if (!props.formData.form1.name) {
     return callback(new Error("Please input name"));
   }

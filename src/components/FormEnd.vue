@@ -1,6 +1,6 @@
 <template>
   <div class="container-thanks">
-    <img src="../assets/images/icon-thank-you.svg" alt="Thank you" />
+    <img src="/assets/images/icon-thank-you.svg" alt="Thank you" />
     <h1>Thank you!</h1>
     <p>Thanks for confirming your subscription!</p>
     <p>
