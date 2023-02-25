@@ -1,0 +1,39 @@
+@font-face {
+  font-family: Ubuntu-Regular;
+  src: url("../../src/assets/fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu-Medium;
+  src: url("../../src/assets/fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url("../../src/assets/fonts/Ubuntu-Bold.ttf");
+}
+
+$primary-color: #032258;
+$secondary-color: #b0b1b5;
+$font-size-base: 16px;
+$bg-step-active: #bee1ff;
+$bg-body: #eef5ff;
+$font-ubuntu-regular: Ubuntu-Regular;
+$font-ubuntu-medium: Ubuntu-Medium;
+$font-ubuntu-bold: Ubuntu-Bold;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-ubuntu-regular;
+}
+
+#app {
+  background-color: $bg-body;
+  @media screen and (min-width: 1000px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
