@@ -26,7 +26,7 @@
       <p class="mountly">Mountly</p>
       <el-switch
         v-model="formData.form2.option"
-        @click="test"
+        @click="changePayMode"
         style="--el-switch-on-color: #032258; --el-switch-off-color: #032258"
         active-value="Yearly"
         inactive-value="Mountly"
@@ -39,8 +39,7 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
 
-const test = () => {
-  console.log("test");
+const changePayMode = () => {
   props.isYearly();
 };
 const props = defineProps({
