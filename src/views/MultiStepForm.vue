@@ -104,13 +104,13 @@ defineComponent({
 });
 
 let plans = ref([
-  { name: "Arcade", src: "/src/assets/images/icon-arcade.svg", price: 9 },
+  { name: "Arcade", src: "./assets/images/icon-arcade.svg", price: 9 },
   {
     name: "Advanced",
-    src: "/src/assets/images/icon-advanced.svg",
+    src: "./assets/images/icon-advanced.svg",
     price: 12,
   },
-  { name: "Pro", src: "/src/assets/images/icon-pro.svg", price: 15 },
+  { name: "Pro", src: "./assets/images/icon-pro.svg", price: 15 },
 ]);
 
 let addOns = ref([
