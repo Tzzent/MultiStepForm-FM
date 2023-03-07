@@ -1,18 +1,38 @@
-# Vue 3 + TypeScript + Vite
+<h1 align="center">Multi Step Form | FM</h1>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<div align="center">
+  <h3>
+    <a target="_blank" href="https://tzzent.github.io/MultiStepForm-FM/">
+      Demo
+    </a>
+  </h3>
+</div>
 
-## Recommended IDE Setup
+Este proyecto es un Multi Formulario.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Características
 
-## Type Support For `.vue` Imports in TS
+- Interfaz responsivo y facil de usar.
+- Permite llenar el formulario paso a paso.
+- El el cuarto paso puedes ver el total del carrito y puedes volver a cambiar.
+- Debes llenar todos los campos para poder pasar.
+- Al final muestra un mensaje de satisfacción.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Capturas de pantalla
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+🖥️ Desktop <br>
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+![DesktopMulti](https://user-images.githubusercontent.com/86677547/223482935-0b7e81b8-04eb-45a5-abc7-120d312c4764.png)
+
+<br>
+📲 Mobile <br><br>
+
+![MobileMulti](https://user-images.githubusercontent.com/86677547/223482966-bcfa3ed5-a6dd-4a9f-8b33-33a0c8da3a5b.png)
+
+
+## Instalación y uso
+
+1. Clona este repositorio: `git clone https://github.com/Tzzent/MultiStepForm-FM`
+2. Instala las dependencias: `npm install`
+3. Ejecuta la aplicación: `npm run dev`
+4. Abre `http://localhost:3000` en tu navegador.
